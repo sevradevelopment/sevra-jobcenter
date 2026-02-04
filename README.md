@@ -57,7 +57,9 @@ Reselling or redistributing this script as your own is not allowed.
 
 ## 🤝 Support
 
-If you find a bug or have a suggestion, feel free to open an issue or contribute.
+If you need help, find a bug, or want updates and future releases, feel free to join our Discord.
+
+👉 [https://discord.gg/RaYdYtbdVu](https://discord.gg/RaYdYtbdVu)
 
 ---
 

@@ -1,66 +1,52 @@
 # sevra-jobcenter
 
-A simple and free Job Center script for FiveM that lets players easily choose their job.
-Designed to work with multiple frameworks and easy to configure for any server.
+A **plug & play Job Center** for FiveM that works **out of the box** with **ESX**, **QBCore**, and has a safe **standalone fallback**.  
+No setup, no edits, no adapters needed — just ensure and go.
 
 ---
 
 ## ✨ Features
 
-* Simple job selection menu
-* Supports multiple frameworks (ESX, QBCore, standalone)
-* Easy to configure
-* Lightweight and clean code
-* Free to use
+- ✅ Works with **ESX Legacy**
+- ✅ Works with **QBCore**
+- ✅ Automatic framework detection
+- ✅ ox_lib context menu
+- ✅ ox_target interaction
+- ✅ NPC Job Center
+- ✅ Configurable jobs
+- ✅ Cooldown protection
+- ✅ Blip included
+- ✅ Clean & lightweight
+- ✅ Open source / free
 
 ---
 
-## 🛠 Supported Frameworks
+## 📦 Requirements
 
-* ESX
-* QBCore
-* Standalone
+- **ox_lib**
+- **ox_target**
+- **oxmysql** (required by most servers anyway)
+- ESX **or** QBCore (for job setting)
 
-> The script is framework-agnostic and can be adapted easily if needed.
+> ⚠️ If no supported framework is found, the script will not crash and will notify the player instead.
 
 ---
 
-## 📦 Installation
+## 📁 Installation
 
 1. Download or clone this repository
-2. Place the folder into your `resources` directory
-3. Add the resource to your `server.cfg`
+2. Place `sevra-jobcenter` into your `resources` folder
+3. Ensure required dependencies
+4. Add to your `server.cfg`
 
-   ```
-   ensure sevra-jobcenter
-   ```
-4. Configure jobs in the config file
-5. Restart your server
+### server.cfg
+```cfg
+ensure oxmysql
 
----
+# ESX or QBCore
+ensure [core]        # ESX (es_extended inside)
+# ensure qb-core     # QBCore
 
-## ⚙️ Configuration
-
-All jobs and settings can be configured through the config file.
-You can easily add, remove, or edit available jobs without touching the core code.
-
----
-
-## 📜 License
-
-This script is free to use.
-You are allowed to modify it for personal or server use.
-
-Reselling or redistributing this script as your own is not allowed.
-
----
-
-## 🤝 Support
-
-If you need help, find a bug, or want updates and future releases, feel free to join our Discord.
-
-👉 [https://discord.gg/RaYdYtbdVu](https://discord.gg/RaYdYtbdVu)
-
----
-
-**Sevra Development**
+ensure ox_lib
+ensure ox_target
+ensure sevra-jobcenter

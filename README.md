@@ -29,7 +29,7 @@ No setup, no edits, no adapters needed — just ensure and go.
 - ESX **or** QBCore (for job setting)
 
 > ⚠️ If no supported framework is found, the script will not crash and will notify the player instead.
-,
+
 ---
 
 ## 📁 Installation

@@ -19,7 +19,7 @@ No setup, no edits, no adapters needed — just ensure and go.
 - ✅ Clean & lightweight
 - ✅ Open source / free
 
----.
+---
 
 ## 📦 Requirements
 
